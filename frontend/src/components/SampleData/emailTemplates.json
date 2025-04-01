@@ -1,0 +1,17 @@
+[
+  {
+    "id": "template1",
+    "name": "Welcome Email",
+    "body": "Welcome to Future Blink! "
+  },
+  {
+    "id": "template2",
+    "name": "Follow-Up Email",
+    "body": "Review our app."
+  },
+  {
+    "id": "template3",
+    "name": "Offer Email",
+    "body": "We are offering discount on our app. ."
+  }
+]

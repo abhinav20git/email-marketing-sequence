@@ -13,18 +13,18 @@ import "@xyflow/react/dist/style.css";
 import LoadSource from "../NodeTypes/LoadSource";
 import ColdEmail from "../NodeTypes/ColdEmail";
 import Delay from "../NodeTypes/Delay";
-import Cstbutton from "../reusables/CstButton";
+// import Cstbutton from "../reusables/CstButton";
 import EmailPopup from "../PopUp/EmailPopup";
 import DelayPopup from "../PopUp/DelayPopup";
 import { toast, ToastContainer } from "react-toastify";
-import { useAppState } from "../../utils/appState";
-import Axios from "axios";
+// import { useAppState } from "../../utils/appState";
+// import Axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
-import { IoRocketOutline } from "react-icons/io5";
+// import { IoRocketOutline } from "react-icons/io5";
 
 
 
-const BASE_URL = process.env.REACT_APP_API_KEY || "http://localhost:8000";
+// const BASE_URL = process.env.REACT_APP_API_KEY || "http://localhost:8000";
 
 const AddButtonNode = memo(({ data, isConnectable }) => {
   return (
@@ -82,30 +82,30 @@ const FlowEditor = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [showInputPopup, setShowInputPopup] = useState(false);
   const [newNodeData, setNewNodeData] = useState(null);
-  const { user } = useAppState();
+  // const { user } = useAppState();
   // const [scheduledEmail, setScheduledEmail] = useState(null);
 
-  const handleSaveandSubmit = async () => {
-    console.log(nodes);
-    try {
-      const response = await Axios.post(`${BASE_URL}/api/sequence`, {
-        email: user.email,
-        sequence: nodes,
-      });
-      console.log(response);
+  // const handleSaveandSubmit = async () => {
+  //   console.log(nodes);
+  //   try {
+  //     const response = await Axios.post(`${BASE_URL}/api/sequence`, {
+  //       email: user.email,
+  //       sequence: nodes,
+  //     });
+  //     console.log(response);
       
-      if (response?.data?.message === "Sequence saved and scheduled successfully") {
-        toast.success(response?.data?.message || "Sequence Saved ", {
-          position: "top-center",
-        })}
+  //     if (response?.data?.message === "Sequence saved and scheduled successfully") {
+  //       toast.success(response?.data?.message || "Sequence Saved ", {
+  //         position: "top-center",
+  //       })}
           
-    } catch (err) {
-      console.log(err);
-      toast.error("An error occurred while saving the sequence.", {
-        position: "top-center",
-      });
-    }
-  };
+  //   } catch (err) {
+  //     console.log(err);
+  //     toast.error("An error occurred while saving the sequence.", {
+  //       position: "top-center",
+  //     });
+  //   }
+  // };
 
   console.log(nodes);
 
@@ -277,14 +277,14 @@ const FlowEditor = () => {
 
   return (
     <div>
-      <div className="flex justify-between px-6 p-4 border border-b-1 border-gray-400 gap-1 mt-4">
+      {/* <div className="flex justify-between px-6 p-4 border border-b-1 border-gray-400 gap-1 ">
         
         <button  className="text-white flex items-center text-center gap-1 bg-blue-500 text-xs md:text-md font-semibold p-1 md:p-2 rounded-md"
         onClick={handleSaveandSubmit}
         ><IoRocketOutline/>Save & Schedule</button>
        
-      </div>
-      <div className="w-full h-[80vh] md:h-[90vh]">
+      </div> */}
+      <div className="w-full h-[80vh] md:h-[90vh] mt-10 border-b-1 px-6 p-4 gap-1">
         <ReactFlow
           nodes={nodes}
           edges={edges}

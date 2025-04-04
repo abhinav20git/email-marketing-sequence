@@ -19,7 +19,7 @@ export default function Header() {
   };
 
   return (
-    <div className="border-b-black border-[1px] fixed h-20 w-full items-center justify-between flex px-1 md:px-8  bg-white">
+    <div className="border-b-black border-[1px] fixed h-20 w-full items-center justify-between flex px-1 md:px-8 mb-20 bg-white">
       <h1 className="font-bold text-black md:text-base text-sm">
         <Link to="/" className="text-2xl">Assignment</Link>
       </h1>

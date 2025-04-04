@@ -145,7 +145,7 @@ agenda.define("send email", async (job) => {
       subject,
       text: body,
     });
-    console.log(`Email sent to ${to}`);
+    console.log('Email sent to ,to');
     console.log('Email Content:', body);
 
     

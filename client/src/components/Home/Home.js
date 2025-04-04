@@ -9,10 +9,10 @@ export default function Home() {
   console.log("Hello from Home", user);
 
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-[100vh] ">
       {!user ? (
         <div>
-          <div className="flex flex-col items-center justify-center text-center h-screen bg-gray-100">
+          <div className="flex flex-col items-center justify-center text-center h-screen bg-gray-300">
             <h1 className="text-2xl md:text-4xl font-bold mb-6 text-black ">Future Blink-Assignment</h1>
             <div className="px-4 md:px-[250px]">
               <p className=" text-xs lg:text-lg mb-6 font-medium font-inter">

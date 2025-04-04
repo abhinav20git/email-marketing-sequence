@@ -28,9 +28,7 @@
 2. Install dependencies:
    ```bash
    npm install
-3. Create a .env.local file in the root of the frontend folder and add the following:
-   ```bash
-   REACT_APP_API_KEY=http://localhost:8000
+3. Create a .env.local file 
 4. Start the Frontend:
    ```bash
    npm start

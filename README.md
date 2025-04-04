@@ -44,13 +44,7 @@
    ```bash
    npm install
 
-3. Create a `.env` file with the following environment variables:
-    ```env
-    mongourl=<your-mongodb-uri>
-    EMAIL_USER=<your-email-username>
-    EMAIL_PASS=<your-email-password>
-    jwtsecret=<your-jwt-secret>
-4. Start the backend:
+3. Start the backend:
     ```bash
    node index.js
 

@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Future blink Assignment</h1>
+ 
   <h4>This application allows users to design and implement an email marketing sequence using a visual flowchart interface. The app is built using the MERN stack (MongoDB, Express.js, React, and Node.js), with React Flow for the frontend flowchart interface. The backend uses Agenda and Nodemailer for scheduling and sending emails.</h4>
 </div>
 
